@@ -51,25 +51,28 @@ nav a{
   height: 420px;
   overflow: hidden;
   position: relative;
-  background: #fff; /* پس‌زمینه سفید */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  /* مهم: این باعث میشه بنر خالی نباشه */
+  background: #fff;
 }
 
+/* تصویر به عنوان بک‌گراند واقعی */
 .hero-banner img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;        /* پر کردن کامل */
+  object-position: center;  /* وسط */
 }
 
 /* موبایل */
 @media (max-width: 768px) {
   .hero-banner {
-    height: 220px;
+    height: 240px;
   }
 }
 
