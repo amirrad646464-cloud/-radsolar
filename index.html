@@ -7,79 +7,85 @@
 
 <style>
 body{
-font-family:tahoma,sans-serif;
-margin:0;
-padding:0;
-background:#F8F9FA;
-color:#333333;
-line-height:1.8;
+    font-family:tahoma,sans-serif;
+    margin:0;
+    padding:0;
+    background:#F8F9FA;
+    color:#333;
+    line-height:1.8;
 }
-<nav style="background:#0B2E6B;padding:15px;text-align:center;">
-<a href="#about" style="color:white;text-decoration:none;margin:15px;">درباره ما</a>
-<a href="#services" style="color:white;text-decoration:none;margin:15px;">خدمات</a>
-<a href="#contact" style="color:white;text-decoration:none;margin:15px;">تماس با ما</a>
-</nav>
+
+/* هدر */
 header{
-background:#0B2E6B;
-color:white;
-}
-text-align:center;
-padding:60px 20px;
+    background:#0B2E6B;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
 
 header h1{
-margin:0;
-font-size:40px;
+    margin:0;
+    font-size:40px;
 }
 
 header p{
-font-size:20px;
+    font-size:20px;
 }
 
+/* سکشن‌ها */
 section{
-padding:40px 10%;
-background:white;
-margin:20px;
-border-radius:10px;
+    padding:40px 6%;
+    background:white;
+    margin:20px;
+    border-radius:12px;
 }
 
+/* تیترها */
 h2{
-color:#0B2E6B;
-text-align:center;
-font-size:32px;
-margin-bottom:25px;
-position:relative;
+    color:#0B2E6B;
+    text-align:center;
+    font-size:32px;
+    margin-bottom:25px;
+    position:relative;
 }
 
 h2::after{
-content:"";
-display:block;
-width:80px;
-height:4px;
-background:#D4AF37;
-margin:10px auto 0;
-border-radius:5px;
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#D4AF37;
+    margin:10px auto 0;
+    border-radius:5px;
 }
 
+/* باکس‌ها */
 .box{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-transition:all 0.3s ease;
-border-top:4px solid #D4AF37;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border-top:4px solid #D4AF37;
 }
 
 .box:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
+
+/* فوتر */
 footer{
-background:#0B2E6B;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
+    background:#0B2E6B;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* اسکرول نرم برای منو */
+html{
+    scroll-behavior:smooth;
 }
 </style>
 </head>
