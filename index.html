@@ -88,26 +88,32 @@ footer{
 html{
     scroll-behavior:smooth;
 }
- .hero-banner {
+   /* ===== HERO BANNER FIXED ===== */
+
+.hero-banner {
   width: 100%;
-  height: 350px;
+  height: 400px;          /* اندازه استاندارد دسکتاپ */
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;      /* جلوگیری از بهم ریختگی */
   object-position: center;
   display: block;
 }
 
+/* موبایل */
 @media (max-width: 768px) {
   .hero-banner {
-    height: 200px;
+    height: 220px;        /* اندازه ثابت و تمیز موبایل */
   }
-}   
+}
 </style>
 </head>
 
